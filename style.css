@@ -1,0 +1,139 @@
+/*
+Google fontes
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+position: relative;
+width: 100%;
+height: 90px;
+background: #F1F1F1;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+box-sizing: border-box;
+z-index: 1000;
+}
+
+.logo {
+width: 120px;
+height: 50px;
+}
+
+.navbar {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+gap: 20px;
+}
+
+.navbar li a {
+text-decoration: none;
+color: #000;
+font-weight: 500;
+font-family: "Montserrat", sans-serif;
+}
+
+.navbar li a:hover {
+color: rgb(41, 128, 185);
+font-weight: 400;
+}
+
+.wpp-div {
+background-color: #60AC59;
+width: 160px;
+height: 55px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+cursor: pointer;
+}
+
+.wpp-div li a {
+text-decoration: none;
+font-family: 'Roboto';
+font-weight: 430;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+#wpp-icon {
+font-size: 24px;
+color: #FFFFFF;
+margin-right: 18px;
+margin-left: 20px;
+}
+
+.whats-button {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+#menu-icon {
+display: none;
+font-size: 24px;
+cursor: pointer;
+}
+
+@media (max-width: 700px) {
+.navbar, .whats-button {
+  display: none;
+}
+
+#menu-icon {
+  display: block;
+}
+
+.menu.open {
+  position: relative;
+}
+
+.menu.open .navbar, .menu.open .whats-button {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background-color: #F1F1F1;
+  width: 200px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1100;
+}
+
+.menu.open .navbar {
+  padding: 10px 0;
+}
+
+.menu.open .wpp-div {
+  position: relative;
+  margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+.menu {
+  flex-direction: column;
+  height: auto;
+}
+
+.navbar{
+  display: none;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+}
+

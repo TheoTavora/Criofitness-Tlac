@@ -1,0 +1,196 @@
+/* Menu */
+
+position: absolute;
+width: 1349px;
+height: 92px;
+left: 0px;
+top: -2px;
+
+
+
+/* Fundo Cinza Escuro */
+
+position: absolute;
+width: 1349px;
+height: 92px;
+left: 0px;
+top: -2px;
+
+background: #F1F1F1;
+
+
+/* Menu */
+
+position: absolute;
+width: 883px;
+height: 45px;
+left: 418px;
+top: 29px;
+
+
+
+/* Menu */
+
+position: absolute;
+width: 416px;
+height: 19px;
+left: 418px;
+top: 45px;
+
+
+
+/* SERVIÇOS */
+
+position: absolute;
+width: 74.73px;
+height: 19px;
+left: 636.48px;
+top: 45px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* TIME */
+
+position: absolute;
+width: 37px;
+height: 19px;
+left: 797px;
+top: 45px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* | */
+
+position: absolute;
+width: 4.04px;
+height: 19px;
+left: 592.04px;
+top: 45px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* | */
+
+position: absolute;
+width: 4.04px;
+height: 19px;
+left: 752.62px;
+top: 45px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* BIOGRAFIA */
+
+position: absolute;
+width: 147px;
+height: 19px;
+left: 418px;
+top: 45px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Call To Action Menu */
+
+position: absolute;
+width: 151.49px;
+height: 45px;
+left: 1149.51px;
+top: 29px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #60AC59;
+border-radius: 100px;
+
+
+/* Chame no Whatsapp */
+
+position: absolute;
+left: 38%;
+right: 12.67%;
+top: 11.11%;
+bottom: 13.33%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+left: 10%;
+right: 71.33%;
+top: 20%;
+bottom: 20%;
+
+background: url(whats logo.png);
+
+
+/* Rectangle 11 */
+
+position: absolute;
+width: 170px;
+height: 50px;
+left: 93px;
+top: 29px;
+
+background: url(WhatsApp_Image_2024-08-01_at_14.20.00-removebg-preview.png);
