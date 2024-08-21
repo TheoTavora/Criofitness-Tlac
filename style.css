@@ -106,14 +106,14 @@ COMEÇO BODY
 .rectangle-content-body{
     display:inline-block;
     background-color: #313345;
-    width: 100%;
-    height: 869px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .body-header-content{
   position: absolute;
-  width: 50%;
-  height: 70%;
+  width: 3vw;
+  height: 3vh;
   left: 110px;
   top: 145px;
   align-items: center;
@@ -129,7 +129,7 @@ COMEÇO BODY
   top: 150px;
   font-weight: bold;
   font-family: "Source Sans 3", sans-serif;
-  font-size: 100%;
+  font-size: 1.2rem;
 }
 
 .sub-content-body{
