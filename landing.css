@@ -128,8 +128,9 @@ body {
     color: white;
 }
 
+
 .carousel-inner img {
-    border: 2px solid white;
+    border: 2px solid #F1F1F1;
     border-radius: 5px;
 }
 
@@ -178,6 +179,12 @@ body {
 }
 .footer a:hover {
     color: #007bff;
+}
+
+@media (max-width: 1200px){
+    #carrossel {
+        display: none;
+    }
 }
 
 @media (max-width: 770px) {
