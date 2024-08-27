@@ -13,18 +13,16 @@
 </head>
 <body>
     <div class="menu">
-        <a href="landing.html"><img src="/imgs/logo tlac.png" class="logo"></a>
+        <img src="/imgs/logo tlac.png" class="logo" href="landing.html">
         <ul class="navbar">
-            <li><a href="#">QUEM SOMOS</a></li>
-            <li><a href="#">ÁREAS DE SERVIÇO</a></li>
-            <li><a href="#">DOCUMENTOS</a></li>
-            <li><a href="#">CONTATO</a></li>
+            <li><a href="#practices">ÁREAS DE SERVIÇO</a></li>
+            <li><a href="#documents">DOCUMENTOS</a></li>
+            <li><a href="#footer-content">CONTATO</a></li>
 
         </ul>
         <div class="whats-button">
             <div class="wpp-div">
-              <a href="mailto:email@exemplo.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <li><a href="#">Chame no Whatsapp</a></li>
+              <a href="mailto:email@exemplo.com" title="Email"><i class="fas fa-envelope" id="envelope-email"></i></a>
             </div>
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -123,12 +121,98 @@
             </div>
           </div>
         </div>
+        <div class="separator"></div>
       </section>
+
+      <!-- Práticas -->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5 mt-3">
+            <h2>Serviços</h2>
+            <h3 class="section-subheading text-muted">Nossa Câmara oferece aos clientes:</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Legislação Privada</h4>
+            <p class="text-muted">
+              Nossa Arbitragem oferece a segurança do julgamento pautado na simples doutrina jusracionalista do Direito
+              Libertário, em que o direito de propriedade são tratados como princípios absolutos, necessários e
+              inalienáveis para evitar e resolver conflitos.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Arbitragem</h4>
+            <p class="text-muted">
+              A Arbitragem é forma privada de resolução de conflitos em que é eleito contratualmente o árbitro, juiz de
+              fato e de direito, para julgar o litígio. Adotamos o julgamento por equidade jusracionalista a fim de
+              oferecer rapidez, previsibilidade e segurança jurídica.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Segurança Jurídica</h4>
+            <p class="text-muted">
+              Por adotarmos o respeito integral ao princípio da propriedade privada, não relativizamos contratos, pois
+              um contrato faz lei entre as partes, lei esta que só está abaixo do direito natural libertário adotado em
+              nosso negócio.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Intermediação</h4>
+            <p class="text-muted">
+              A melhor forma de resolver discordâncias é conversando. A intermediação busca facilitar o acordo entre as
+              partes a fim de resolver o conflito, trazendo foco na manutenção da harmonia na relação das partes.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Governança e Compliance</h4>
+            <p class="text-muted">
+              Oferecemos nossos serviços na área de Governança e Compliance para coibir litígios internos de forma
+              efetiva, sigilosa e segura. Torna-se útil para empresas, associações, clubes, condomínios, etc.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Networking</h4>
+            <p class="text-muted">
+              Buscamos registrar contratos na nossa câmara para prover segurança jurídica e ajudar nossos clientes a se
+              conectarem para fazerem negócios juntos. Acaba sendo uma estratégia onde todos se beneficiam!
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h4 class="service-heading text-uppercase">Atendimento Virtual</h4>
+            <p class="text-muted">
+              Não só basta oferecer segurança e previsibilidade, mas também é preciso ser acessível. Nossa atuação
+              on-line permite atuarmos por todo o país, o que também traz baixo custo para quem usa nossos serviços, não
+              pesando em seu bolso.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <!--<span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>-->
+            <h4 class="service-heading text-uppercase">Homologação</h4>
+            <p class="text-muted">
+              Caso as partes entrem em acordo sobre questões que envolvam bens patrimoniais disponíveis, elas não
+              precisam ir ao judiciário para homologar. Nossa câmara realiza homologação de forma sigilosa, rápida,
+              barata e eficiente, trazendo segurança jurídica aos envolvidos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
          <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container" id="#footer-content">
           <div class="row">
               <div class="col">
                   <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>

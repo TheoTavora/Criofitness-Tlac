@@ -25,6 +25,7 @@ html, body {
 
 body {
     overflow-x: hidden; /* Evita a rolagem horizontal */
+    background-color: #F1F1F1;
 }
 
 .menu {
@@ -67,9 +68,9 @@ body {
 }
 
 .wpp-div {
-    background-color: #60AC59;
-    width: 160px;
-    height: 55px;
+    background-color: #313345;;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,6 +109,11 @@ body {
     cursor: pointer;
 }
 
+#envelope-email{
+    color: white;
+    font-size: 25px;
+}
+
 /* Hero Section */
 .hero-section {
     background-color: #313345;
@@ -137,6 +143,11 @@ body {
     border: 2px solid #F1F1F1;
     border-radius: 5px;
 }
+
+.separator {
+    border-top: 3px solid #d0d0d0; /* Cor cinza clara */
+    margin: 20px 0; /* Espaço acima e abaixo da linha */
+  }
 
 .areas-section {
     padding: 40px 0;
