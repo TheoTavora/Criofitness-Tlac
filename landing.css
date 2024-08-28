@@ -29,7 +29,7 @@ body {
 }
 
 .menu {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 70px;
     background: #F1F1F1;
@@ -39,51 +39,77 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 1000;
-}
-
-.logo {
+    }
+    
+    .logo {
+    position: relative;
     margin-left: 80px;
     width: 90px;
     height: 40px;
-}
-
-.navbar {
+    }
+    
+    .navbar {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
-}
-
-.navbar li a {
+    }
+    
+    .navbar li a {
     text-decoration: none;
     color: #000;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-}
-
-.navbar li a:hover {
+    }
+    
+    .navbar li a:hover {
     color: rgb(41, 128, 185);
     font-weight: 400;
-}
-
-.wpp-div {
-    background-color: #313345;;
-    width: 50px;
-    height: 50px;
+    }
+    
+    .email-div {
+    background-color: #313345;
+    width: 160px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     cursor: pointer;
-}
-
-.wpp-div li a {
+    }
+    
+    .email-div li a {
     text-decoration: none;
     font-family: 'Roboto';
     font-weight: 430;
-    font-size: 16px;
+    font-size: 15px;
     color: #FFFFFF;
+    }
+    
+    #envelope-email {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 22px;
+    margin-left: 22px;
+    }
+    
+    .whats-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    }
+    
+    #menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    }
+    
+/* FIM DO CSS HEADER */
+
+.service-button:hover{
+    transform: scale(1.1);
 }
 
 #wpp-icon {
@@ -91,28 +117,8 @@ body {
     color: #FFFFFF;
     margin-right: 18px;
     margin-left: 20px;
-}
+    }
 
-.whats-button {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.service-button:hover{
-    transform: scale(1.1);
-}
-
-#menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#envelope-email{
-    color: white;
-    font-size: 25px;
-}
 
 /* Hero Section */
 .hero-section {
@@ -202,8 +208,8 @@ body {
     }
 }
 
-@media (max-width: 770px) {
-    .navbar, .whats-button {
+@media (max-width: 800px) {
+    ul.navbar, .email-button {
       display: none;
     }
     
@@ -215,7 +221,7 @@ body {
       position: relative;
     }
     
-    .menu.open .navbar, .menu.open .whats-button {
+    .menu.open .navbar, .menu.open .email-button {
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -231,14 +237,14 @@ body {
       padding: 10px 0;
     }
     
-    .menu.open .wpp-div {
+    .menu.open .email-div {
       position: relative;
       margin-top: 10px;
       }
     
       .logo{
-        width: 80px;
-        height: auto;
+        width: 90px;
+        height: 40px;
         margin-left: 20px;
       }
     
