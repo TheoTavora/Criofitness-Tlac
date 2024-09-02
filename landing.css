@@ -25,7 +25,7 @@ html, body {
 
 body {
     overflow-x: hidden; /* Evita a rolagem horizontal */
-    background-color: #F1F1F1;
+    background-color:rgb(248, 249, 250);
 }
 
 .menu {
@@ -151,8 +151,8 @@ body {
 }
 
 .separator {
-    border-top: 3px solid #d0d0d0; /* Cor cinza clara */
-    margin: 20px 0; /* Espaço acima e abaixo da linha */
+    border-top: 6px solid #d0d0d0; /* Cor cinza clara */
+    margin: 0; /* Espaço acima e abaixo da linha */
   }
 
 .areas-section {
@@ -208,46 +208,56 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 915px) {
     ul.navbar, .email-button {
       display: none;
     }
     
     #menu-icon {
       display: block;
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: 1200; /* Garante que o ícone fique acima do conteúdo do menu */
+      font-size: 28px;
+      cursor: pointer;
     }
     
     .menu.open {
-      position: relative;
+      position: fixed; /* Mantém o menu fixo */
+      top: 0;
+      right: 0;
+      width: 200px;  /* Define a largura do menu lateral */
+      height: 100%;  /* Faz o menu ocupar toda a altura da tela */
+      background-color: #F1F1F1;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar destaque */
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 70px;  /* Espaçamento para que o conteúdo comece abaixo da logo */
     }
     
     .menu.open .navbar, .menu.open .email-button {
       display: flex;
       flex-direction: column;
-      position: absolute;
-      top: 90px;
-      right: 0;
-      background-color: #F1F1F1;
-      width: 200px;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-      z-index: 1100;
+      align-items: center;
+      gap: 20px;
     }
     
     .menu.open .navbar {
       padding: 10px 0;
+      margin-top: 0;
     }
     
     .menu.open .email-div {
-      position: relative;
       margin-top: 10px;
-      }
-    
-      .logo{
-        width: 90px;
-        height: 40px;
-        margin-left: 20px;
-      }
-    
-    
     }
+    
+    .logo {
+      width: 90px;
+      height: 40px;
+      margin-left: 0;
+    }
+}
     
