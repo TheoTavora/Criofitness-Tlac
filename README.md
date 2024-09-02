@@ -1,4 +1,4 @@
-# Projeto site Landing Page - Tribunal Libertário de Arbitragem e Conciliações
+# Projeto site Landing Page - Tribunal Libertário de Acordos e Conciliações
 
 - [x] Header 
 - [x] Responsividade
