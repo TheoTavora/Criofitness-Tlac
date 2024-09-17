@@ -2,13 +2,11 @@
 
 - [x] Header 
 - [x] Responsividade
-- [ ] Corpo do site - ENCAMINHANDO
+- [x] Corpo do site 
 - [x] Footer c/ Dados 
 
-<h3>Tarefas para a finalização do site:
+# Projeto Site Landing Page - Criofitness (Academia)
 
-- [] Área de documentos
-- [] Área de time
-- [] FAQ de duvidas
-
-</h3>
+- [x] Header RESPONSIVO
+- [ ] Corpo do site
+- [ ] Footer c/ Dados (encaminhando)
