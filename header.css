@@ -28,12 +28,7 @@ body {
     min-height: 100vh;
 }
 
-.extra-layer{
-    background-color: #f06423;
-    height: 146px;
-    width: 100%;
-}
-
+/* HEADER CSS */
 
 header {
     position: fixed;
@@ -161,6 +156,21 @@ header {
     z-index: 1001;
     display: none;
 }
+/* FIM HEADER */
+/* BODY */
+
+.teste{
+    object-fit: cover;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.extra-layer {
+    background-color: #f06423;
+    height: 146px;
+    width: 100%;
+}
+
 
 #wpp-icon {
     font-size: 24px;
@@ -198,7 +208,6 @@ header {
 
 /* Footer css */
 .footer {
-
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
@@ -216,13 +225,22 @@ header {
     color: #007bff;
 }
 
+.sub-paragraph {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#location-pin{
+    margin-right: 4px;
+}
+
 @media (max-width: 1330px) {
     header {
         padding: 14px 2%;
         transition: .2s;
     }
 
-    .th {
+    .extra-layer {
         height: 118px;
         transition: all .50s ease;
     }
