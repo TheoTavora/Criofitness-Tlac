@@ -9,4 +9,4 @@
 
 - [x] Header RESPONSIVO
 - [ ] Corpo do site
-- [ ] Footer c/ Dados (encaminhando)
+- [X] Footer c/ Dados
