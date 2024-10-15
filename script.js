@@ -23,3 +23,10 @@ menu.onclick = () => {
   menu.classList.toggle('bx-x');
   navbar.classList.toggle('open')
 }
+
+
+// Função para diminuir o header ao fazer scroll
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('header');
+  header.classList.toggle('scrolled', window.scrollY > 30);
+});
