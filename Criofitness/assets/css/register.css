@@ -84,3 +84,7 @@
      color: var(--main-color);
      text-decoration: none;
  }
+
+ .form-footer p {
+    color: var(--text-color);
+ }
