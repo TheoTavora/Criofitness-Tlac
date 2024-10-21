@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="icon" href="Criofitnessimg/logotipoCrio.PNG">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../assets/css/register.css">
     <title>Faça seu cadastro! - Criofitness</title>
 </head>
 
