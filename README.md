@@ -8,5 +8,5 @@
 # Projeto Site Landing Page - Criofitness (Academia)
 
 - [x] Header RESPONSIVO
-- [ ] Corpo do site
+- [ ] Corpo do site - ENCAMINNHANDO
 - [X] Footer c/ Dados
