@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.PLANOBASICO{
+    justify-items: center;
+}
+
+.card {
+    width: 300px;
+    background: linear-gradient(195deg, black, #C85F33);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    background-color: #d15a29;
+    border-radius: 12px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 10;
+    position: absolute;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.check-icon::before {
+    content: '✔';
+    color: white;
+    font-size: 12px;
+}
