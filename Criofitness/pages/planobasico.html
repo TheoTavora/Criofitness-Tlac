@@ -7,28 +7,135 @@
     <title>Plano Básico</title>
     <link href="../assets/css/planos.css" rel="stylesheet">
 </head>
+<style>
+    
+
+.container-planos {
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    margin: auto;
+}
+
+.header-basico {
+    background-color: #d15a29;
+    color: white;
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 0.6250em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blackline {
+    background-color: black;
+    margin: 0;
+    margin-top: 4px;
+    left: 30%;
+    width: 40px;
+    height: 14px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 30px;
+}
+
+.card-planos-basico {
+    width: 300px;
+    background: linear-gradient(195deg, black, #C85F33);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+}
+
+.content-basico{
+    margin-bottom: 10px;
+}
+
+.content-basico h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.whiteline {
+    background-color: white;
+    margin: 0;
+    margin-top: 6px;
+    left: 25%;
+    width: 50%;
+    height: 1.15px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 30px;
+}
+
+.items-planos {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.items-planos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.check-icon-planos {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.check-icon-planos::before {
+    content: '✔';
+    color: white;
+    font-size: 12px;
+}
+</style>
 
 <body>
-<div class="PLANOBASICO">
-    <div class="header">BÁSICO</div>
-        <div class="card">
-            <div class="content">
-                <h2>O que está incluso?</h2>
-                <ul class="items">
+<div class="container-planos">
+    <div class="header-basico">BÁSICO
+        <div class="blackline"></div>
+    </div>
+        <div class="card-planos-basico">
+            <div class="content-basico">
+                <h2><i>O que está incluso?</i>
+                    <div class="whiteline"></div>
+                </h2>
+                
+                <ul class="items-planos">
                     <li>
-                    <div class="check-icon"></div>
+                    <div class="check-icon-planos"></div>
                     BIOIMPEDÂNCIA
                 </li>
                 <li>
-                    <div class="check-icon"></div>
+                    <div class="check-icon-planos"></div>
                     1 CRIO 5D
                 </li>
                 <li>
-                    <div class="check-icon"></div>
+                    <div class="check-icon-planos"></div>
                     AULAS MODELO STUDIO
                 </li>
                 <li>
-                    <div class="check-icon"></div>
+                    <div class="check-icon-planos"></div>
                     FUNCIONAL 1x NA SEMANA
                 </li>
             </ul>
