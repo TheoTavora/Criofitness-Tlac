@@ -27,3 +27,10 @@ fetch('planoclube.html')
         document.getElementById('plano-container-clube').innerHTML = data;
     })
     .catch(error => console.error('Erro ao carregar o arquivo:', error));
+
+fetch('planomelhoridade.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('plano-container-melhoridade').innerHTML = data;
+    })
+    .catch(error => console.error('Erro ao carregar o arquivo:', error));
