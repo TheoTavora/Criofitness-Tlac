@@ -267,6 +267,10 @@ header.scrolled {
     margin-bottom: 8px;
 }
 
+.sub-paragraph-home, #home-title{
+    color: white;
+}
+
 #location-pin{
     margin-right: 4px;
 }
