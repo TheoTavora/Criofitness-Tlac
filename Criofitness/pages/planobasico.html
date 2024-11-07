@@ -14,7 +14,10 @@
     display: inline-block;
     max-width: 90%;
     margin: auto;
+    perspective: 1000px;
+
 }
+
 
 .header-basico {
     background-color: #d15a29;
@@ -29,6 +32,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .blackline {
@@ -45,6 +49,8 @@
 
 .card-planos-basico {
     width: 300px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(195deg, black, #C85F33);
     border-radius: 15px;
     padding: 20px;
@@ -53,13 +59,17 @@
     text-align: center;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     margin-top: 25px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: transform 0.6s;
 }
 
-.content-basico{
+
+.card-side {
     margin-bottom: 10px;
 }
 
-.content-basico h2 {
+.card-side h2 {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 400;
@@ -115,7 +125,7 @@
         <div class="blackline"></div>
     </div>
         <div class="card-planos-basico">
-            <div class="content-basico">
+            <div class="card-side card-front">
                 <h2><i>O que está incluso?</i>
                     <div class="whiteline"></div>
                 </h2>
@@ -139,7 +149,13 @@
                 </li>
             </ul>
         </div>
+        <div class="card-side card-back">
+            <p>189R$ MENSAL <br>
+                1800R$
+            </p>
+        </div>
     </div>
+
 </div>
 </body>
 
