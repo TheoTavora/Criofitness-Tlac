@@ -15,7 +15,7 @@
     max-width: 90%;
     margin: auto;
     perspective: 1000px;
-
+    height:100%;
 }
 
 
@@ -48,8 +48,11 @@
 }
 
 .card-planos-basico {
+    position: relative;
     width: 300px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background: linear-gradient(195deg, black, #C85F33);
     border-radius: 15px;
@@ -59,20 +62,43 @@
     text-align: center;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     margin-top: 25px;
-    transform-style: preserve-3d;
-    transform-origin: center;
+    transform-style: preserve-3d; /* Adicionado para permitir a rotação 3D */
     transition: transform 0.6s;
 }
 
+.card-planos-basico:hover {
+    transform: rotateY(180deg); /* Adicionado para girar o card no hover */
+} 
 
-.card-side {
+.card-side-front {
+    position: relative;
     margin-bottom: 10px;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
-.card-side h2 {
+.card-side-front h2 {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 400;
+}
+
+.card-side-back{
+    position: absolute;
+    transform: rotateY(180deg); /* Adicionado para fazer o verso girar corretamente */
+    background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex; /* Adicionado para centralizar o conteúdo */
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Adicionado para destacar o texto */
+    font-weight: bold;
+    backface-visibility: hidden;
+    overflow: hidden;
 }
 
 .whiteline {
@@ -125,7 +151,7 @@
         <div class="blackline"></div>
     </div>
         <div class="card-planos-basico">
-            <div class="card-side card-front">
+            <div class="card-side-front">
                 <h2><i>O que está incluso?</i>
                     <div class="whiteline"></div>
                 </h2>
@@ -149,9 +175,11 @@
                 </li>
             </ul>
         </div>
-        <div class="card-side card-back">
-            <p>189R$ MENSAL <br>
-                1800R$
+        <div class="card-side-back">
+            <p>
+                Preços: <br><br>
+                189R$ MENSAL <br>
+                1800R$ ANUAL
             </p>
         </div>
     </div>
