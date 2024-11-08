@@ -14,6 +14,7 @@
     display: inline-block;
     max-width: 90%;
     margin: auto;
+    perspective: 1000px;
 }
 
 .header-planos {
@@ -29,6 +30,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .blackline-2 {
@@ -45,6 +47,12 @@
 
 .card-planos {
     width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     background: linear-gradient(215deg, #FFFF95, #FFFA8A, #DDAC17, #ECC440, #ECC440, #DDAC17);
     border-radius: 15px;
     padding: 20px;
@@ -53,19 +61,28 @@
     text-align: left;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
     margin-top: 25px;
-
+    transform-style: preserve-3d; /* Adicionado para permitir a rotação 3D */
+    transition: transform 0.6s;
 }
 
-.content-planos{
+.card-planos:hover{
+    transform: rotateY(180deg);
+}
+
+/*
+.card-side-front{
+    position: relative;
     margin-bottom: 10px;
 }
+*/
 
-.content-planos h2 {
+.card-side-front h2 {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
 }
+
 
 .blackline-thin {
     background-color: black;
@@ -118,7 +135,7 @@
             <div class="blackline-2"></div>
         </div>
         <div class="card-planos">
-            <div class="content-planos">
+            <div class="card-side-front">
                 <h2><i>O que está incluso?</i>
                     <div class="blackline-thin"></div>
                 </h2>
@@ -154,6 +171,13 @@
                         AVALIAÇÃO FISICA
                     </li>
                 </ul>
+            </div>
+            <div class="card-side-back">
+                <p> 
+                    Planos: <br><br>
+                    459R$ MENSAL <br>
+                    5010R$ ANUAL
+                </p>
             </div>
         </div>
     </div>
