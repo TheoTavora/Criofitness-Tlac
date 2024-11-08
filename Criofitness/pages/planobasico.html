@@ -4,148 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/planos.css">
     <title>Plano Básico</title>
 </head>
-<style>
-    
-
-.container-planos {
-    position: relative;
-    display: inline-block;
-    max-width: 90%;
-    margin: auto;
-    perspective: 1000px;
-    height:100%;
-}
-
-
-.header-basico {
-    background-color: #d15a29;
-    color: white;
-    border-radius: 12px;
-    padding: 0.5em 1em;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
-    position: absolute;
-    top: 0.6250em;
-    left: 50%;
-    transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-}
-
-.blackline {
-    background-color: black;
-    margin: 0;
-    margin-top: 4px;
-    left: 30%;
-    width: 40px;
-    height: 14px;
-    position: absolute;
-    z-index: 10;
-    border-radius: 30px;
-}
-
-.card-planos-basico {
-    position: relative;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(195deg, black, #C85F33);
-    border-radius: 15px;
-    padding: 20px;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-    margin-top: 25px;
-    transform-style: preserve-3d; /* Adicionado para permitir a rotação 3D */
-    transition: transform 0.6s;
-}
-
-.card-planos-basico:hover {
-    transform: rotateY(180deg); /* Adicionado para girar o card no hover */
-} 
-
-.card-side-front {
-    position: relative;
-    margin-bottom: 10px;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.card-side-front h2 {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.card-side-back{
-    position: absolute;
-    transform: rotateY(180deg); /* Adicionado para fazer o verso girar corretamente */
-    background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    display: flex; /* Adicionado para centralizar o conteúdo */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 24px; /* Adicionado para destacar o texto */
-    font-weight: bold;
-    backface-visibility: hidden;
-    overflow: hidden;
-}
-
-.whiteline {
-    background-color: white;
-    margin: 0;
-    margin-top: 6px;
-    left: 25%;
-    width: 50%;
-    height: 1.15px;
-    position: absolute;
-    z-index: 10;
-    border-radius: 30px;
-}
-
-.items-planos {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-}
-
-.items-planos li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.check-icon-planos {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.check-icon-planos::before {
-    content: '✔';
-    color: white;
-    font-size: 12px;
-}
-</style>
-
 <body>
 <div class="container-planos">
     <div class="header-basico">BÁSICO
@@ -175,7 +36,7 @@
                     FUNCIONAL 1x NA SEMANA
                 </li>
             </ul>
-            <h6 style="margin-left: 18px; color: white;"><i class="ri-cursor-fill"></i> Passe o mouse por cima!</h6>
+            <h6 style="align-items: center; justify-content: center; color: white;"><i class="ri-cursor-fill"></i> Passe o mouse por cima!</h6>
         </div>
         <div class="card-side-back">
             <p>

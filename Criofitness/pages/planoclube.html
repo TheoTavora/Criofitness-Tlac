@@ -4,137 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/planos.css">
     <title>Plano Clube</title>
 </head>
-<style>
-    
-
-.container-planos {
-    position: relative;
-    display: inline-block;
-    max-width: 90%;
-    margin: auto;
-    perspective: 1000px;
-}
-
-.header-planos {
-    background: linear-gradient(180deg, #FFFF95, #FFFA8A, #DDAC17, #ECC440);
-    color: black;
-    border-radius: 12px;
-    padding: 0.5em 1em;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
-    position: absolute;
-    top: 0.6250em;
-    left: 50%;
-    transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-}
-
-.blackline-2 {
-    background-color: black;
-    margin: 0;
-    margin-top: 4px;
-    left: 30%;
-    width: 40px;
-    height: 12px;
-    position: absolute;
-    z-index: 10;
-    border-radius: 30px;
-}
-
-.card-planos {
-    width: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: linear-gradient(215deg, #FFFF95, #FFFA8A, #DDAC17, #ECC440, #ECC440, #DDAC17);
-    border-radius: 15px;
-    padding: 20px;
-    color: black;
-    font-family: Arial, sans-serif;
-    text-align: left;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
-    margin-top: 25px;
-    transform-style: preserve-3d; /* Adicionado para permitir a rotação 3D */
-    transition: transform 0.6s;
-}
-
-.card-planos:hover{
-    transform: rotateY(180deg);
-}
-
-/*
-.card-side-front{
-    position: relative;
-    margin-bottom: 10px;
-}
-*/
-
-.card-side-front h2 {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-}
-
-
-.blackline-thin {
-    background-color: black;
-    margin: 0;
-    margin-top: 6px;
-    left: 25%;
-    width: 50%;
-    height: 1.15px;
-    position: absolute;
-    z-index: 10;
-    border-radius: 30px;
-}
-
-.items-planos {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-}
-
-.items-planos li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.check-icon-planos {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-
-.check-icon-planos::before {
-    content: '✔';
-    color: white;
-    font-size: 12px;
-}
-</style>
 <body>
-
     <div class="container-planos">
-        <div class="header-planos">CLUBE
+        <div class="header-clube">CLUBE
             <div class="blackline-2"></div>
         </div>
-        <div class="card-planos">
+        <div class="card-planos-clube">
             <div class="card-side-front">
                 <h2><i>O que está incluso?</i>
                     <div class="blackline-thin"></div>
@@ -171,7 +49,7 @@
                         AVALIAÇÃO FISICA
                     </li>
                 </ul>
-                <h6 style="margin-left: 18px; color: black;"><i class="ri-cursor-fill"></i> Passe o mouse por cima!</h6>
+                <h6 style="align-items: center; justify-content: center; color: black;"><i class="ri-cursor-fill"></i> Passe o mouse por cima!</h6>
             </div>
             <div class="card-side-back">
                 <p> 
