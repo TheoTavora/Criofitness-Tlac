@@ -7,13 +7,6 @@
     <title>Plano Melhor idade</title>
 </head>
 <style>
-    .container-planos {
-        position: relative;
-        display: inline-block;
-        max-width: 90%;
-        margin: auto;
-    }
-
     .header-melhoridade {
         background: linear-gradient(180deg, black, #C2B2AB);
         color: white;
@@ -27,6 +20,7 @@
         left: 50%;
         transform: translateX(-50%);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 10;
         
     }
 
@@ -43,7 +37,12 @@
     }
 
     .card-melhoridade {
+        position: relative;
         width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         background: linear-gradient(195deg, black, #C2B2AB);
         border-radius: 15px;
         padding: 20px;
@@ -52,7 +51,13 @@
         text-align: left;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
         margin-top: 25px;
+        transform-style: preserve-3d; /* Adicionado para permitir a rotação 3D */
+        transition: transform 0.6s;
 
+    }
+
+    .card-melhoridade:hover{
+         transform: rotateY(180deg);
     }
 
     .content-planos {
@@ -141,9 +146,12 @@
                         PROTOCOLO PARA DORES E PATOLOGIA
                     </li>
                 </ul>
+                <h6 style="margin-left: 18px; color: black;"><i class="ri-cursor-fill"></i> Passe o mouse por cima!</h6>
             </div>
             <div class="card-side-back">
-                <p> </p>
+                <p> 
+                    Preços: <br><br>
+                    280R$ MENSAL </p>
             </div>
         </div>
     </div>
